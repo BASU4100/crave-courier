@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --purpleColor: #7339c0;
+    --greenColor: #8cc63f;
+    --whiteColor: #fff;
+    --blackColor: #222;
+    --lavenderColor: #f6ebff;
+    --darkGreyColor: #a7a7a7;
+    --greyColor: #f5f5f5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    max-width: 20em;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2em;
+    box-sizing: border-box;
+    background-color: var(--purpleColor);
+    color: var(--whiteColor);
+}
+
+.logo {
+    font-family: "Limelight", sans-serif;
+    font-size: 2em;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: inherit;
+}
+
+header > button, 
+.nav-menu > button {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: inherit;
+    color: inherit;
+    margin: 0.5rem 0;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    text-align: start;
+}
+
+header > button > img, 
+.nav-menu > button > img {
+    height: 1.5rem;
+    filter: invert(1);
+}
+
+header > button:hover, 
+.nav-menu > button:hover {
+    filter: invert(1);
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 2em;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow: scroll;
+    background-color: var(--lavenderColor);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 2.5em;
+    gap: 30%;
+}
+
+.content {
+    flex: 1;
+}
+
+.searchbar {
+    flex: 1;
+    display: flex;
+    border-radius: 2rem;
+    overflow: clip;
+    height: inherit;
+    background-color: var(--whiteColor);
+}
+
+.searchbar > input {
+    flex: 1;
+    font-size: 1rem;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+.searchbar > button {
+    padding: 0 2rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: var(--greenColor);
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.searchbar > button:hover {
+    filter: invert(1);
+}
+
+.info-btn, .info-btn > button {
+    height: inherit;
+}
+
+.info-btn > button {
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    border: none;
+    background-color: var(--whiteColor);
+    border-radius: 2rem;
+}
+
+.searchbar:hover, .info-btn > button:hover {
+    box-shadow: 1px 2px 5px var(--darkGreyColor);
+}
+
+.info-btn > button > img {
+    height: 1.5rem;
+    filter: invert(29%) sepia(16%) saturate(7408%) hue-rotate(248deg) brightness(89%) contrast(97%);
+}
+
