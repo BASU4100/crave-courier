@@ -86,7 +86,6 @@ main {
     display: flex;
     justify-content: space-between;
     height: 2.5em;
-    gap: 30%;
 }
 
 .content {
@@ -94,7 +93,7 @@ main {
 }
 
 .searchbar {
-    flex: 1;
+    width: 60%;
     display: flex;
     border-radius: 2rem;
     overflow: clip;
@@ -125,6 +124,7 @@ main {
 }
 
 .info-btn, .info-btn > button {
+    display: flex;
     height: inherit;
 }
 
@@ -144,4 +144,3 @@ main {
     height: 1.5rem;
     filter: invert(29%) sepia(16%) saturate(7408%) hue-rotate(248deg) brightness(89%) contrast(97%);
 }
-
