@@ -1,0 +1,77 @@
+.content { 
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--greyColor);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    gap: 1.5rem;
+}
+
+.currentBalance, .addMoneyUI {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 3px 5px 0px var(--darkGreyColor);
+    flex-direction: column;
+    background-color: var(--whiteColor);
+    padding: 1.5rem 0;
+    max-height: 50%;
+}
+
+.currentBalance > p:first-child {
+    display: inline-flex;
+    font-size: 2rem;
+    color: var(--purpleColor);
+    align-items: center;
+    gap: 1rem;
+}
+
+.currentBalance > p:nth-of-type(2) {
+    font-size: 2rem;
+}
+
+.addMoney {
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    border: none;
+    background-color: var(--greenColor);
+    color: var(--whiteColor);
+    border-radius: 1rem;
+    width: 20rem;
+}
+
+.addMoneyUI > div {
+    height: 3.5rem;
+    width: 20rem;
+    display: flex;
+}
+
+.addMoneyUI > div:first-of-type {
+    font-size: 1.5rem;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.addMoneyUI > div:first-of-type > input {
+    flex: 1;
+    height: 100%;
+    padding-left: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.addMoneyUI > div:last-of-type {
+    gap: 2rem;
+}
+
+.addMoneyUI > div:last-of-type > * {
+    flex: 1;
+    font-size: 1.5rem;
+    background-color: var(--lavenderColor);
+    color: var(--purpleColor);
+    border: 2px dashed var(--purpleColor);
+    border-radius: 0.5rem;
+}

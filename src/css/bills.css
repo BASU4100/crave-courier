@@ -21,6 +21,7 @@
     padding: 1.5rem;
     gap: 1rem;
     border-radius: 1rem;
+    box-shadow: 0px 3px 5px 0px var(--darkGreyColor);
 }
 
 .billCard > p {
