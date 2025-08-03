@@ -23,7 +23,6 @@ body {
 
 header {
     max-width: 20em;
-    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -78,7 +77,8 @@ main {
     padding: 2em;
     box-sizing: border-box;
     height: 100vh;
-    overflow: scroll;
+    overflow-y: scroll;
+    scrollbar-width: none;
     background-color: var(--lavenderColor);
 }
 

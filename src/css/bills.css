@@ -1,0 +1,47 @@
+.content { 
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--greyColor);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    gap: 1.5rem;
+}
+
+.content > p {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--darkGreyColor);
+}
+
+.billCard {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--whiteColor);
+    padding: 1.5rem;
+    gap: 1rem;
+    border-radius: 1rem;
+}
+
+.billCard > p {
+    font-size: 0.8rem;
+    color: var(--darkGreyColor);
+}
+
+th {
+    font-size: 1.1rem;
+}
+
+table > tr > * {
+    line-height: 1.5;
+    text-align: center;
+}
+
+table > tr > *:first-child {
+    padding-left: 1rem;
+    text-align: left;
+}
+
+table > :last-child > * {
+    border-top: 1px solid black;
+}

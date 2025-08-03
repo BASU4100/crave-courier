@@ -91,22 +91,22 @@ function recommend() {
         {
             image : images['Salad.jpg'],
             item_name : "Fresh Salad",
-            price : "Rs. 60"
+            price : 60
         },
         {
             image : images['Cold coffee.jpg'],
             item_name : "Cold Coffee",
-            price : "Rs. 150"
+            price : 150
         },
         {
             image : images['Butter Chicken.jpg'],
             item_name : "Butter Chicken",
-            price : "Rs. 220"
+            price : 220
         },
         {
             image : images['Burger.jpg'],
             item_name : "Big Burger",
-            price : "Rs. 120"
+            price : 120
         }
     ];
     //Card generator loop
@@ -120,7 +120,7 @@ function recommend() {
         subChild.innerHTML = item.item_name;
         newChild.appendChild(subChild);
         subChild = document.createElement("p");
-        subChild.innerHTML = item.price;
+        subChild.innerHTML = "Rs. " + item.price;
         newChild.appendChild(subChild);
         recommendationCardDiv.appendChild(newChild);
     }
@@ -242,49 +242,49 @@ function menu() {
             image: images['Butter Chicken.jpg'],
             item_name: 'Butter Chicken',
             item_desc: 'Butter chicken is a type of curry made from chicken cooked in a spiced tomato and butter-based gravy.',
-            price: 'Rs. 220'
+            price: 220
         },
         {
             image: images['Momo.jpg'],
             item_name: 'Chicken Momo',
             item_desc: 'Momos are a type of steamed filled dumpling in Tibetan and Nepali cuisine.',
-            price: 'Rs. 100'
+            price: 100
         },
         {
             image: images['Pizza.jpg'],
             item_name: 'Pizza',
             item_desc: 'Pizza and its variants are among the most popular foods in the world.',
-            price: 'Rs. 240.99'
+            price: 240.99
         },
         {
             image: images['Oreo Shake.jpg'],
             item_name: 'Oreo Shake',
             item_desc: 'A deliciously creamy Oreo milkshake made by blending milk, ice cream, and cookies together.',
-            price: 'Rs. 165.99'
+            price: 165.99
         },
         {
             image: images['Paneer.jpg'],
             item_name: 'Paneer Do-Pyaza',
             item_desc: 'Paneer do pyaza is a rich, creamy curry of soft succulent paneer and plenty of onions.',
-            price: 'Rs. 280.99'
+            price: 280.99
         },
         {
             image: images['Naan.jpg'],
             item_name: 'Butter Naan',
             item_desc: 'Butter naan is a type of leavened flatbread made from flour, yeast, yogurt, and butter.',
-            price: 'Rs. 60'
+            price: 60
         },
         {
             image: images['Salad.jpg'],
             item_name: 'Fresh Salad',
             item_desc: 'Fresh water and fiber rich vegetables, along with salt, peppar and lemon on the side.',
-            price: 'Rs. 60'
+            price: 60
         },
         {
             image: images['Cappucino.jpg'],
             item_name: 'Cappucino',
             item_desc: 'A cappuccino is a hot coffee drink made with layering of espresso, steamed milk, and milk foam on top.',
-            price: 'Rs. 90.99'
+            price: 90.99
         },
     ];
     //Loop to create menu cards from the menu object
@@ -307,7 +307,7 @@ function menu() {
         newChild.innerHTML = item.item_desc;
         cardDiv.appendChild(newChild);
         newChild = document.createElement("p");
-        newChild.innerHTML = item.price;
+        newChild.innerHTML = "Rs. " + item.price;
         cardDiv.appendChild(newChild);
         menuDiv.appendChild(cardDiv);
     }
