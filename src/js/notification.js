@@ -3,6 +3,9 @@ import '../css/notification.css';
 export function notificationPage() {
     const contentDiv = document.querySelector(".content");
     contentDiv.innerHTML = "";
+    contentDiv.classList.remove("formPage");
+    if (!contentDiv.classList.contains("commonPage"))
+        contentDiv.classList.add("commonPage");
 
     //Notification Array
     const images = importAll(require.context('../images', false, /\.(png|jpe?g|svg)$/));

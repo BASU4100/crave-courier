@@ -3,6 +3,9 @@ import '../css/bills.css';
 export function billsPage() {
     const contentDiv = document.querySelector(".content");
     contentDiv.innerHTML = "";
+    contentDiv.classList.remove("formPage");
+    if (!contentDiv.classList.contains("commonPage"))
+        contentDiv.classList.add("commonPage");
 
     //Bills Array
     const bills = [

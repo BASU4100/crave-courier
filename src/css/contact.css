@@ -1,0 +1,51 @@
+.formPage {
+    align-items: center;
+}
+
+.content > .contactHeading {
+    color: var(--purpleColor);
+}
+
+form {
+    width: 60%;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+form > label {
+    grid-column: 1;
+    font-size: 1.2rem;
+    text-align: start;
+}
+
+form > input, form > textarea {
+    grid-column: 2;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    background-color: var(--lavenderColor);
+    border: 1px solid var(--darkGreyColor);
+}
+
+form > input:focus, form > textarea:focus {
+    outline: 1px solid blue;
+}
+
+form > input:invalid {
+    outline: 1px solid red;
+}
+
+form > input:valid {
+    outline: 1px solid var(--greenColor);
+}
+
+form + button {
+    width: 20rem;
+    font-size: 1.2rem;
+    padding: 1rem 3rem;
+    border: none;
+    background-color: var(--greenColor);
+    color: var(--whiteColor);
+    border-radius: 1rem;
+}

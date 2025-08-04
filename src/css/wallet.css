@@ -1,13 +1,3 @@
-.content { 
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--greyColor);
-    border-radius: 1rem;
-    padding: 1.5rem;
-    gap: 1.5rem;
-}
-
 .currentBalance, .addMoneyUI {
     flex: 1;
     display: flex;
@@ -61,6 +51,14 @@
     height: 100%;
     padding-left: 0.5rem;
     font-size: 1.5rem;
+}
+
+.addMoneyUI > div:first-of-type > input:focus {
+    outline: 1px solid blue;
+}
+
+.addMoneyUI > div:first-of-type > input:invalid {
+    outline: 1px solid red;
 }
 
 .addMoneyUI > div:last-of-type {

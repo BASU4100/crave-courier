@@ -3,6 +3,7 @@ import { homepage } from './home';
 import { billsPage } from './bills';
 import { walletPage } from './wallet';
 import { notificationPage } from './notification';
+import { contactPage } from './contact';
 
 
 //Home Page
@@ -23,3 +24,7 @@ walletBtn.addEventListener("click", walletPage);
 //Notification Page
 const notificationBtn = document.querySelector(".notification");
 notificationBtn.addEventListener("click", notificationPage);
+
+//Contact Page
+const contactBtn = document.querySelector(".contact");
+contactBtn.addEventListener("click", contactPage);

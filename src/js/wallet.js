@@ -4,6 +4,9 @@ let balance = 500;
 export function walletPage() {
     const contentDiv = document.querySelector(".content");
     contentDiv.innerHTML = "";
+    contentDiv.classList.remove("formPage");
+    if (!contentDiv.classList.contains("commonPage"))
+        contentDiv.classList.add("commonPage");
 
     //Balance Block
     const currentBalanceDiv = document.createElement("div");
@@ -45,7 +48,7 @@ function addMoneyUI() {
     input.id = "amount";
     input.min = 50;
     input.max = 2000;
-    input.step = 50;
+    input.step = 10;
     input.placeholder = "100";
     input.required = true;
     inputForm.appendChild(input);

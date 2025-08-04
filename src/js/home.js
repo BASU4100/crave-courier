@@ -5,6 +5,8 @@ import bookmark from '../icons/bookmark.svg';
 export function homepage () {
     const contentDiv = document.querySelector(".content");
     contentDiv.innerHTML = "";
+    contentDiv.classList.remove("commonPage");
+    contentDiv.classList.remove("formPage");
 
     const recommendFunc = recommend();
     contentDiv.appendChild(recommendFunc.recommendationDiv);
